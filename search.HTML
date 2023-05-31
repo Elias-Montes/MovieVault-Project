@@ -21,7 +21,7 @@
                     <rect x="14" y="1" width="7" height="6"></rect>
                     <rect x="14" y="11" width="7" height="12"></rect>
                   </svg>
-                  <span class="ml-2 text-xl font-bold tracking-wide text-white-100 uppercase">MovieVault</span>
+                  <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">MovieVault</span>
                 </a>
                 <ul class="flex items-center hidden space-x-8 lg:flex">
                   <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">My List</a></li>
@@ -47,7 +47,7 @@
               <input
                 type="search"
                 class="relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
-                placeholder="Look for movies or shows..."
+                placeholder="Look for movies or shows or people..."
                 aria-label="Search"
                 aria-describedby="button-addon2" />
           
@@ -149,22 +149,65 @@
         </div>
       </div>
       <!-- List Sections -->
-      <div class="h-56 grid grid-cols-3 gap-4 content-start px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20  ">
+      <div class="list h-56 gap-4 content-start px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div class="max-w-screen-lg sm:mx-auto">
-          <div class="flex flex-col items-start py-4 transition m-8 outline outline-offset-2 outline-black-500 duration-300 transform rounded sm:px-4 lg:flex-row sm:hover:translate-x-4 sm:hover:bg-blue-gray-50">
+          <ul>
+          <li><div class="flex flex-col items-start py-4 transition m-8 outline outline-offset-2 outline-black-500 duration-300 transform rounded sm:px-4 lg:flex-row sm:hover:translate-x-4 sm:hover:bg-blue-gray-50">
             <div class="mb-4 lg:mb-0">
               <h5 class="mb-4 text-xl font-bold leading-none sm:text-2xl">
-                The quick, brown fox
+                Movies I want to Watch
               </h5>
               <div class="relative pr-8">
                 <p class="text-base text-gray-700 md:text-lg">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                  
                 </p>
               </div>
             </div>
             <div class="flex justify-start w-56 lg:justify-end">
               <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                Learn more
+                Go to List
+                <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+                  <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          </li>
+          <li><div class="flex flex-col items-start py-4 transition m-8 outline outline-offset-2 outline-black-500 duration-300 transform rounded sm:px-4 lg:flex-row sm:hover:translate-x-4 sm:hover:bg-blue-gray-50">
+            <div class="mb-4 lg:mb-0">
+              <h5 class="mb-4 text-xl font-bold leading-none sm:text-2xl">
+                Movies I have Watched
+              </h5>
+              <div class="relative pr-8">
+                <p class="text-base text-gray-700 md:text-lg">
+                  
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-start w-56 lg:justify-end">
+              <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                Go to List
+                <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+                  <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          </li>
+          <div class="flex flex-col items-start py-4 transition m-8 outline outline-offset-2 outline-black-500 duration-300 transform rounded sm:px-4 lg:flex-row sm:hover:translate-x-4 sm:hover:bg-blue-gray-50">
+            <div class="mb-4 lg:mb-0">
+              <h5 class="mb-4 text-xl font-bold leading-none sm:text-2xl">
+                Shows I want to Watch/Watching
+              </h5>
+              <div class="relative pr-8">
+                <p class="text-base text-gray-700 md:text-lg">
+                  
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-start w-56 lg:justify-end">
+              <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+                Go to List
                 <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
                 </svg>
@@ -174,63 +217,24 @@
           <div class="flex flex-col items-start py-4 transition m-8 outline outline-offset-2 outline-black-500 duration-300 transform rounded sm:px-4 lg:flex-row sm:hover:translate-x-4 sm:hover:bg-blue-gray-50">
             <div class="mb-4 lg:mb-0">
               <h5 class="mb-4 text-xl font-bold leading-none sm:text-2xl">
-                Bro ipsum dolor sit
+                Shows I have Watched
               </h5>
               <div class="relative pr-8">
                 <p class="text-base text-gray-700 md:text-lg">
-                  Lookout flogging bilge rat main sheet bilge water nipper fluke to go on account heave down clap of thunder. Reef sails six pounders.
+                  
                 </p>
               </div>
             </div>
             <div class="flex justify-start w-56 lg:justify-end">
               <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                Learn more
+                Go to List
                 <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
                 </svg>
               </a>
             </div>
           </div>
-          <div class="flex flex-col items-start py-4 transition m-8 outline outline-offset-2 outline-black-500 duration-300 transform rounded sm:px-4 lg:flex-row sm:hover:translate-x-4 sm:hover:bg-blue-gray-50">
-            <div class="mb-4 lg:mb-0">
-              <h5 class="mb-4 text-xl font-bold leading-none sm:text-2xl">
-                Japan air Skate park
-              </h5>
-              <div class="relative pr-8">
-                <p class="text-base text-gray-700 md:text-lg">
-                  If one examines precultural libertarianism, one is faced with a choice: either accept rationalism.
-                </p>
-              </div>
-            </div>
-            <div class="flex justify-start w-56 lg:justify-end">
-              <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                Learn more
-                <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
-                  <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="flex flex-col items-start py-4 transition m-8 outline outline-offset-2 outline-black-500 duration-300 transform rounded sm:px-4 lg:flex-row sm:hover:translate-x-4 sm:hover:bg-blue-gray-50">
-            <div class="mb-4 lg:mb-0">
-              <h5 class="mb-4 text-xl font-bold leading-none sm:text-2xl">
-                Bro ipsum dolor sit
-              </h5>
-              <div class="relative pr-8">
-                <p class="text-base text-gray-700 md:text-lg">
-                  Lookout flogging bilge rat main sheet bilge water nipper fluke to go on account heave down clap of thunder. Reef sails six pounders.
-                </p>
-              </div>
-            </div>
-            <div class="flex justify-start w-56 lg:justify-end">
-              <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
-                Learn more
-                <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
-                  <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+        </ul>
         </div>
       </div>
 </main>
