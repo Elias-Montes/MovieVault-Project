@@ -71,7 +71,7 @@
         </div> -->
     </nav>
     <!-- Header and search input form -->
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-gray-100">
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:bg-gray-100">
       <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
         <div class="flex flex-col mb-16 sm:text-center sm:mb-0">
           <a href="/" class="mb-6 sm:mx-auto">
@@ -104,7 +104,7 @@
           <div>
             <form class="flex flex-col items-center w-full mb-4 md:flex-row md:px-16">
               <input
-                placeholder="Search for a movie, tv show....."
+                placeholder="Search for a movie, tv show, or people....."
                 required=""
                 type="text"
                 class="flex-grow w-full h-12 px-4 mb-3 text-black transition duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 bg-deep-purple-900 focus:border-teal-accent-700 focus:outline-none focus:shadow-outline"
@@ -130,8 +130,66 @@
       </div>
     </div>
 
+
+    <!--Trending List-->
+    <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
+      <div class="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
+        <h3 class="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
+          <span class="inline-block mb-1 sm:mb-4">
+            <i class="fa fa-video-camera" aria-hidden="true"></i>
+            Trending
+          </span>
+          <div class="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100"></div>
+        </h3>
+        <!-- <p class="text-gray-700 lg:text-sm lg:max-w-md">
+          "Sed ut perspiciatis unde omnis iste natus error sit iste voluptatem accusantium doloremque rem aperiam, ipsa eaque quae. Sed ut perspiciatis unde omnis iste."
+        </p> -->
+      </div>
+      <div class="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
+        <a href="/" aria-label="View Item">
+          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" />
+            <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+              <p class="text-sm font-medium tracking-wide text-white trending">
+                Trending One
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/" aria-label="View Item">
+          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" />
+            <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+              <p class="text-sm font-medium tracking-wide text-white trending">
+                Trending Two
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/" aria-label="View Item">
+          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" />
+            <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+              <p class="text-sm font-medium tracking-wide text-white trending">
+                Trending Three
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="/" aria-label="View Item">
+          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+            <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" />
+            <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+              <p class="text-sm font-medium tracking-wide text-white trending">
+                Trending Four
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
     <!--My Movie List-->
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pb-20">
       <div class="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
         <h3 class="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
           <span class="inline-block mb-1 sm:mb-4">
