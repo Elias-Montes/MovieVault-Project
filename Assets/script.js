@@ -2,10 +2,16 @@ var userSearch
 var apiKey = "9920fb12bf2316b80811a61d121e9ee8"
 var trendingEls = $(".trending")
 var trendingImage = $(".trending-image")
+var searches = document.querySelector('#search-input');
 
 $("#search-button").on("click",function(){
     userSearch = $("#search-input").val()
-    console.log(userSearch)
+    console.log(userSearch);
+    var input = searches.value.trim();
+    function search(){
+    window.location.href="./search.HTML?search="+input;
+};
+    search();
 })
 
 // Trending List
