@@ -3,6 +3,7 @@ var apiKey = "9920fb12bf2316b80811a61d121e9ee8"
 var trendingTitle = $(".trending")
 //var trendingDiv = $(".trending-div")
 var trendingImage = $(".trending-image")
+
 var modalUrl = ""
 
 //pexel
@@ -48,6 +49,18 @@ $(".trending-image").on("click",function(event){
 $("#close-modal").on("click",function(){
   $("iframe").attr("src",modalUrl)
   //console.log(modalUrl)  
+
+var searches = document.querySelector('#search-input');
+
+$("#search-button").on("click",function(){
+    userSearch = $("#search-input").val()
+    console.log(userSearch);
+    var input = searches.value.trim();
+    function search(){
+    window.location.href="./search.HTML?search="+input;
+};
+    search();
+
 })
 
 // Trending List

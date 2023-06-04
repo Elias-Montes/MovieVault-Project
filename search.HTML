@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieVault</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./Assets/style.css">
@@ -24,8 +24,8 @@
                   <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">MovieVault</span>
                 </a>
                 <ul class="flex items-center hidden space-x-8 lg:flex">
-                  <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">My List</a></li>
-                  <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Genres</a></li>
+                  <li><a href="./list.HTML" aria-label="My List" title="My List" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">My List</a></li>
+                  <li><a href="/" aria-label="Genres" title="Genres" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Genres</a></li>
                   <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">About us</a></li>
                 </ul>
                 <!-- Mobile menu -->
@@ -47,6 +47,7 @@
               <input
                 type="search"
                 class="relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus:text-neutral-700 focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                id="search-input"
                 placeholder="Look for movies or shows or people..."
                 aria-label="Search"
                 aria-describedby="button-addon2" />
@@ -54,7 +55,7 @@
               <!--Search icon-->
               <span
                 class="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-neutral-700 light:text-neutral-200"
-                id="basic-addon2">
+                id="search-button basic-addon2 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -82,72 +83,88 @@
           </svg>
         </div>
         <div class="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          
+
+            <a href="/" aria-label="View Item">
             <div class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
             <div class="p-5">
-              <p class="mb-2 font-bold"></p>
-              <p class="text-sm leading-5 text-gray-900"></p>
+              <p class="mb-2 font-bold search"></p>
+              <img class="object-cover w-full h-56 md:h-64 xl:h-80 search-image" alt="" />
             </div>
             <div class="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
           </div>
+          </a>
           
+          <a href="/" aria-label="View Item">
           <div class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
             <div class="p-5">
-              <p class="mb-2 font-bold"></p>
-              <p class="text-sm leading-5 text-gray-900"></p>
+              <p class="mb-2 font-bold search"></p>
+              <img class="object-cover w-full h-56 md:h-64 xl:h-80 search-image" alt="" />
             </div>
             <div class="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
           </div>
-          
+          </a>
+
+          <a href="/" aria-label="View Item">
           <div class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
             <div class="p-5">
-              <p class="mb-2 font-bold"></p>
-              <p class="text-sm leading-5 text-gray-900"></p>
+              <p class="mb-2 font-bold search"></p>
+              <img class="object-cover w-full h-56 md:h-64 xl:h-80 search-image" alt="" />
             </div>
             <div class="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
           </div>
-          
+          </a>
+
+          <a href="/" aria-label="View Item">
           <div class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
             <div class="p-5">
-              <p class="mb-2 font-bold"></p>
-              <p class="text-sm leading-5 text-gray-900"></p>
+              <p class="mb-2 font-bold search"></p>
+              <img class="object-cover w-full h-56 md:h-64 xl:h-80 search-image" alt="" />
             </div>
             <div class="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
           </div>
-          
+          </a>
+
+          <a href="/" aria-label="View Item">
           <div class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
             <div class="p-5">
-              <p class="mb-2 font-bold"></p>
-              <p class="text-sm leading-5 text-gray-900"></p>
+              <p class="mb-2 font-bold search"></p>
+              <img class="object-cover w-full h-56 md:h-64 xl:h-80 search-image" alt="" />
             </div>
             <div class="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
           </div>
-          
+          </a>
+
+          <a href="/" aria-label="View Item">
           <div class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
             <div class="p-5">
-              <p class="mb-2 font-bold"></p>
-              <p class="text-sm leading-5 text-gray-900"></p>
+              <p class="mb-2 font-bold search"></p>
+              <img class="object-cover w-full h-56 md:h-64 xl:h-80 search-image" alt="" />
             </div>
             <div class="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
           </div>
+          </a>
           
+          <a href="/" aria-label="View Item">
           <div class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
             <div class="p-5">
-              <p class="mb-2 font-bold"></p>
-              <p class="text-sm leading-5 text-gray-900"></p>
+              <p class="mb-2 font-bold search"></p>
+              <img class="object-cover w-full h-56 md:h-64 xl:h-80 search-image" alt="" />
             </div>
             <div class="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
           </div>
-          
+          </a>
+
+          <a href="/" aria-label="View Item">
           <div class="flex flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
             <div class="p-5">
-              <p class="mb-2 font-bold"></p>
-              <p class="text-sm leading-5 text-gray-900"></p>
+              <p class="mb-2 font-bold search"></p>
+              <img class="object-cover w-full h-56 md:h-64 xl:h-80 search-image" alt="" />
             </div>
             <div class="w-full h-1 ml-auto duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100"></div>
           </div>
         </div>
       </div>
+      </a>
       <!-- List Sections -->
       <div class="list h-56 gap-4 content-start px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div class="max-w-screen-lg sm:mx-auto">
@@ -164,7 +181,7 @@
               </div>
             </div>
             <div class="flex justify-start w-56 lg:justify-end">
-              <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+              <a href="./list.HTML" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
                 Go to List
                 <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
@@ -185,7 +202,7 @@
               </div>
             </div>
             <div class="flex justify-start w-56 lg:justify-end">
-              <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+              <a href="./list.HTML" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
                 Go to List
                 <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
@@ -206,7 +223,7 @@
               </div>
             </div>
             <div class="flex justify-start w-56 lg:justify-end">
-              <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+              <a href="./list.HTML" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
                 Go to List
                 <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
@@ -226,7 +243,7 @@
               </div>
             </div>
             <div class="flex justify-start w-56 lg:justify-end">
-              <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+              <a href="./list.HTML" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
                 Go to List
                 <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
                   <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
@@ -238,7 +255,11 @@
         </div>
       </div>
 </main>
-
-    <script src="./Assets/script.js"></script>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"></script>
+    <script src="./Assets/searchscript.js"></script>
 </body>
 </html>
