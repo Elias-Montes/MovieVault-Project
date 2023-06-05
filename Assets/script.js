@@ -3,10 +3,9 @@ var apiKey = "9920fb12bf2316b80811a61d121e9ee8"
 var trendingTitle = $(".trending")
 //var trendingDiv = $(".trending-div")
 var trendingImage = $(".trending-image")
-
 var modalUrl = ""
 
-//pexel
+//null poster path: pexel
 //0Hruyh1T07GCKyGt53A7CckpNVq9P0vPx4d87asBLvmQ44T79APdbS8L
 function picture(){
   const options = {
@@ -23,23 +22,9 @@ function picture(){
     console.log(data)})
   }
 
-
-
-// curl -H "Authorization: YOUR_API_KEY" \
-//   "https://api.pexels.com/v1/search?query=nature&per_page=1"
-
-
-
-
-$("#search-button").on("click",function(){
-    userSearch = $("#search-input").val()
-    //console.log(userSearch)
-})
-
 //Set up trailer
 $(".trending-image").on("click",function(event){
   //$(event.target).attr("data-trend-trailer"))
-
   var modalUrl = "https://www.youtube.com/embed/"+$(event.target).attr("data-trend-trailer")+"?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1"
   $("iframe").attr("src",modalUrl)
   //console.log(modalUrl)
@@ -48,18 +33,23 @@ $(".trending-image").on("click",function(event){
 //Reload modal
 $("#close-modal").on("click",function(){
   $("iframe").attr("src",modalUrl)
-  //console.log(modalUrl)  
+  //console.log(modalUrl)
+})
 
-var searches = document.querySelector('#search-input');
-
+// Redirect to Search.html with user search input
 $("#search-button").on("click",function(){
-    userSearch = $("#search-input").val()
-    console.log(userSearch);
-    var input = searches.value.trim();
-    function search(){
-    window.location.href="./search.HTML?search="+input;
-};
-    search();
+  userSearch = jQuery.trim($("#search-input").val())
+  if (!userSearch){
+    console.log("Been pageSetup")
+  }else{
+      window.location.href="./search.HTML?search="+userSearch;
+  }
+})
+
+// Store to localStorage
+$("#add-list").on("click",function(){
+  console.log("Been add to ist")
+  console.log($(this))
 
 })
 
@@ -77,6 +67,7 @@ function trendingLoad(){
       .then(response => response.json())
       .then(function(data){
         //console.log($(".trending-image"))
+        console.log(data)
         for (i=0; i<4; i++){
           trendingTitle[i].textContent=data.results[i].title
           //$(trendingDiv[i]).attr("data-id",data.results[i].id)//Store trending film id 
@@ -110,6 +101,7 @@ function gettrailerKey(filmID,Ele){
     .then(response => response.json())
     .then(function(data){
       //Get "official Trailer" or "Trailer"
+      //console.log(data)
       var trailer = data.results.filter(function(el){
         return el.name === "Official Trailer"})
 
@@ -121,6 +113,8 @@ function gettrailerKey(filmID,Ele){
       // console.log('been here')
       // console.log(trailer[0].key)
       Ele.attr("data-trend-trailer",trailer[0].key)
+      Ele.attr("data-id",filmID)
+
       //return trailer[0].key
 
       // $('iframe').attr("src","https://www.youtube.com/embed/"+trailer[0].key+"modestbranding=1&rel=0&controls=0&showinfo=0&html5=1")
@@ -133,4 +127,4 @@ function gettrailerKey(filmID,Ele){
 }
 
 trendingLoad()
-//picture()
+picture()
