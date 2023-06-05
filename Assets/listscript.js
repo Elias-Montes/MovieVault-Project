@@ -49,7 +49,7 @@ function detailsLoad(title,listId) {
 
 // Add movie to watched list
 function addWatchedMovie() {
-  event.preventDefault();
+  //event.preventDefault();
   const movieTitle = $('#watchedMovieInput').val();
   if (movieTitle.trim() === '') return;
   console.log(movieTitle);
