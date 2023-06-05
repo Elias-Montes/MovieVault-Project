@@ -12,8 +12,7 @@
   <body>
     <!-- navbar -->
     <nav>
-      <div class="bg-gray-900">
-        
+      <div class="bg-gray-900"> 
         <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <a href="./index.html" aria-label="MovieVault" title="MovieVault" class="inline-flex items-center">
@@ -26,8 +25,8 @@
               <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">MovieVault</span>
             </a>
             <ul class="flex items-center hidden space-x-8 lg:flex">
-              <li><a href="./list.HTML" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">My List</a></li>
-              <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Genres</a></li>
+              <li><a href="./list.HTML" aria-label="My List" title="My List" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">My List</a></li>              
+              <li><a href="/" aria-label="Genres" title="Genres" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Genres</a></li>
               <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">About us</a></li>
             </ul>
             <!-- Mobile menu -->
@@ -278,7 +277,6 @@
       </div>
     </div>
 
-
     <!--Modal body: embeded trailer-->
     <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
       <div class="relative w-full max-w-2xl max-h-full">
@@ -300,8 +298,9 @@
                       Overview
                   </p>
               </div> -->
-              <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="margin:0 auto" allowfullscreen></iframe>             
-
+              <div class="p-5">
+                <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="margin:0 auto" allowfullscreen></iframe>             
+              </div>
               <!-- Modal footer -->
               <!-- <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                   <button data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="add-list">Add to List</button>
