@@ -13,35 +13,35 @@
     <!-- navbar -->
     <nav>
       <div class="bg-gray-900">
-          <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-            <div class="relative flex items-center justify-between">
-              <a href="/" aria-label="MovieVault" title="MovieVault" class="inline-flex items-center">
-                <svg class="w-8 text-teal-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="white" fill="none">
-                  <rect x="3" y="1" width="7" height="12"></rect>
-                  <rect x="3" y="17" width="7" height="6"></rect>
-                  <rect x="14" y="1" width="7" height="6"></rect>
-                  <rect x="14" y="11" width="7" height="12"></rect>
+        <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+          <div class="relative flex items-center justify-between">
+            <a href="/" aria-label="MovieVault" title="MovieVault" class="inline-flex items-center">
+              <svg class="w-8 text-teal-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="white" fill="none">
+                <rect x="3" y="1" width="7" height="12"></rect>
+                <rect x="3" y="17" width="7" height="6"></rect>
+                <rect x="14" y="1" width="7" height="6"></rect>
+                <rect x="14" y="11" width="7" height="12"></rect>
+              </svg>
+              <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">MovieVault</span>
+            </a>
+            <ul class="flex items-center hidden space-x-8 lg:flex">
+              <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">My List</a></li>
+              <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Genres</a></li>
+              <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">About us</a></li>
+            </ul>
+            <!-- Mobile menu -->
+            <div class="lg:hidden">
+              <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+                <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+                  <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+                  <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
                 </svg>
-                <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">MovieVault</span>
-              </a>
-              <ul class="flex items-center hidden space-x-8 lg:flex">
-                <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">My List</a></li>
-                <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Genres</a></li>
-                <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">About us</a></li>
-              </ul>
-              <!-- Mobile menu -->
-              <div class="lg:hidden">
-                <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
-                  <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
-                    <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
-                    <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
-                  </svg>
-                </button>
-              </div>
+              </button>
             </div>
           </div>
         </div>
+      </div>
         <!-- search bar -->
         <!-- <div class="mb-3">
           <div class="relative mb-4 flex w-full flex-wrap items-stretch">
@@ -107,7 +107,7 @@
                 placeholder="Search for a movie, tv show, or people....."
                 required=""
                 type="text"
-                class="flex-grow w-full h-12 px-4 mb-3 text-black transition duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 bg-deep-purple-900 focus:border-teal-accent-700 focus:outline-none focus:shadow-outline"
+                class="flex-grow w-full h-12 px-4 mb-3 text-black transition duration-200 border-2 border-transparent rounded appearance-none md:mr-2 md:mb-0 focus:border-teal-accent-700 dark:focus:border-primary"
                 id="search-input"
               />
               <!-- <a
@@ -148,38 +148,52 @@
       <div class="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
         <!--Add modal to play youtube video-->
         <!-- <a href="/" aria-label="View Item" data-modal-target="popup-modal" data-modal-toggle="popup-modal"> -->
-          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl trending-div">
-            <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" data-trend-trailer="" data-modal-target="popup-modal" data-modal-toggle="popup-modal"/>
-            <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-              <p class="text-sm font-medium tracking-wide text-white trending">
-                Trending One
-              </p>
+          <div>
+            <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl hover:cursor-pointer">
+              <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" data-trend-trailer="" data-modal-target="defaultModal" data-modal-toggle="defaultModal" data-id=""/>
+              <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                <p class="text-sm font-medium tracking-wide text-white trending">
+                  Trending One
+                </p>
+              </div>
+            </div>
+            <div>
+              <button data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="add-list">Add to List</button>
+            </div>
+          </div>
+
+        <!-- </a> -->
+        <!-- <a href="/" aria-label="View Item"> -->
+          <div>
+            <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl hover:cursor-pointer">
+              <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" data-trend-trailer="" data-modal-target="defaultModal" data-modal-toggle="defaultModal" data-id=""/>
+              <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+                <p class="text-sm font-medium tracking-wide text-white trending">
+                  Trending Two
+                </p>
+              </div>
+            </div>
+            <div>
+              <button data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="add-list">Add to List</button>
             </div>
           </div>
         <!-- </a> -->
         <!-- <a href="/" aria-label="View Item"> -->
-          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl trending-div">
-            <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" data-trend-trailer="" data-modal-target="popup-modal" data-modal-toggle="popup-modal"/>
-            <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-              <p class="text-sm font-medium tracking-wide text-white trending">
-                Trending Two
-              </p>
-            </div>
-          </div>
-        <!-- </a> -->
-        <!-- <a href="/" aria-label="View Item"> -->
-          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl trending-div">
-            <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" data-trend-trailer="" data-modal-target="popup-modal" data-modal-toggle="popup-modal"/>
+          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl hover:cursor-pointer">
+            <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" data-trend-trailer="" data-modal-target="defaultModal" data-modal-toggle="defaultModal" data-id=""/>
             <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
               <p class="text-sm font-medium tracking-wide text-white trending">
                 Trending Three
               </p>
             </div>
           </div>
+                      <div>
+              <button data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="add-list">Add to List</button>
+            </div>
         <!-- </a>
         <a href="/" aria-label="View Item"> -->
-          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl trending-div">
-            <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" data-trend-trailer="" data-modal-target="popup-modal" data-modal-toggle="popup-modal"/>
+          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl hover:cursor-pointer">
+            <img class="object-cover w-full h-56 md:h-64 xl:h-80 trending-image" alt="" data-trend-trailer="" data-modal-target="defaultModal" data-modal-toggle="defaultModal" data-id=""/>
             <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
               <p class="text-sm font-medium tracking-wide text-white trending">
                 Trending Four
@@ -205,41 +219,41 @@
       </div>
       <div class="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
         <!-- <a href="/" aria-label="View Item"> -->
-          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl list-div" data-id="">
+          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl list-div">
             <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
             <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
               <p class="text-sm font-medium tracking-wide text-white">
-                Sed ut perspiciatis unde omnis iste natus error
+                My List 1
               </p>
             </div>
           </div>
         <!-- </a>
         <a href="/" aria-label="View Item"> -->
-          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl list-div" data-id="">
+          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl list-div">
             <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3182750/pexels-photo-3182750.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
             <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
               <p class="text-sm font-medium tracking-wide text-white">
-                Leverage agile frameworks to provide a robust synopsis
+                My List 2
               </p>
             </div>
           </div>
         <!-- </a>
         <a href="/" aria-label="View Item"> -->
-          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl list-div" data-id="">
+          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl list-div">
             <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
             <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
               <p class="text-sm font-medium tracking-wide text-white">
-                Dingy I'm tellin' you rhubaahb Bangah Jo-Jeezly
+                My List 3
               </p>
             </div>
           </div>
         <!-- </a>
         <a href="/" aria-label="View Item"> -->
-          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl list-div" data-id="">
+          <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl list-div">
             <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
             <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
               <p class="text-sm font-medium tracking-wide text-white">
-                Rough pomfret lemon shark plownose chimaera
+                My List 4
               </p>
             </div>
           </div>
@@ -256,23 +270,62 @@
     </div>
 
     <!--Modal body: embeded trailer-->
-    <!-- <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"> -->
-    <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
       <div class="relative w-full max-w-2xl max-h-full">
-      <!-- <div class="relative w-full max-w-md max-h-full"> -->
+          <!-- Modal content -->
           <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-              <button type="button" id="close-modal" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="popup-modal">
-                  <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              <!-- Modal header -->
+              <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                      Official Trailer
+                  </h3>
+                  <button type="button" id="close-modal" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                  </button>
+              </div>
+              <!-- Modal body -->
+              <!-- <div class="p-6 space-y-6">
+                  <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                      Overview
+                  </p>
+              </div> -->
+              <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="margin:0 auto" allowfullscreen></iframe>             
+
+              <!-- Modal footer -->
+              <!-- <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                  <button data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" id="add-list">Add to List</button>
+              </div> -->
+          </div>
+      </div>
+  </div>
+    
+
+
+
+    <!-- <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+      <div class="relative w-full max-w-2xl max-h-full">
+
+          <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+              //<button type="button" id="close-modal" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="popup-modal">
+              <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="popup-modal">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                   <span class="sr-only">Close modal</span>
               </button>
               <div class="p-6 text-center">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/SUXWAEX2jlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                   -->
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/SUXWAEX2jlg?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="margin:0 auto" allowfullscreen></iframe>                -->
+                <svg aria-hidden="true" class="mx-auto mb-4 text-gray-400 w-14 h-14 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Are you sure you want to delete this product?</h3>
+                <button data-modal-hide="popup-modal" type="button" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
+                    Yes, I'm sure
+                </button>
+                <button data-modal-hide="popup-modal" type="button" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">No, cancel</button>
+                //<iframe width="560" height="315" src="https://www.youtube.com/embed/SUXWAEX2jlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  
+                //<iframe width="560" height="315" src="https://www.youtube.com/embed/SUXWAEX2jlg?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="margin:0 auto" allowfullscreen></iframe>               
                 <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="margin:0 auto" allowfullscreen></iframe>             
               </div>
           </div>
       </div>
-  </div>
+  </div> -->
     
 
     <script
