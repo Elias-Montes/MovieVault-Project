@@ -48,7 +48,7 @@ $("#search-button").on("click",function(){
 
 // Store to localStorage
 $("#add-list").on("click",function(){
-  console.log("Been add to ist")
+  console.log("Been add to List")
   console.log($(this))
 
 })
@@ -124,6 +124,26 @@ function gettrailerKey(filmID,Ele){
       //Update ifram link
     })
 
+}
+
+//function to load the list page on click at homepage
+function listLoad(tabName) {
+  var url = "/list.HTML";
+  var targetTab;
+  console.log(tabName);
+  switch (tabName) {
+      case "tabMovies":
+          targetTab = "moviesTabBtn";
+          break;
+      case "tabTvshows":
+          targetTab = "tvShowsTabBtn";
+          break;
+      default:
+          targetTab = "moviesTabBtn";
+          break;
+  }
+  
+  window.open(url, targetTab);
 }
 
 trendingLoad()
