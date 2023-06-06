@@ -128,7 +128,7 @@ function gettrailerKey(filmID,Ele){
 
 //function to load the list page on click at homepage
 function listLoad(tabName) {
-  var url = "/list.HTML";
+  var url = "./list.HTML";
   var targetTab;
   console.log(tabName);
   switch (tabName) {
