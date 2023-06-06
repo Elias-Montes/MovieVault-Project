@@ -110,4 +110,3 @@ function listLoad(tabName) {
 }
 
 trendingLoad()
-//picture()
